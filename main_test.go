@@ -97,7 +97,7 @@ func Test引数の数が4つでない場合(t *testing.T) {
 			t.Errorf("when %v, want exit status 1 but actual %d", argCase, status)
 		}
 
-		want := "引数値の数は3つである必要があります。\n"
+		want := "引数値の数は3つである必要があります\n"
 		if want != got {
 			t.Errorf("want: \"%s\" but got: \"%s\"", want, got)
 		}
